@@ -45,7 +45,8 @@ If you have any ideas or would like to develop a new theme, you are welcome to s
 <script>
   var preview = Docsify.dom.find('.demo-theme-preview');
   var themes = Docsify.dom.findAll('[rel="stylesheet"]');
-
+  alter(preview);
+  alter(themes);
   preview.onclick = function (e) {
     var title = e.target.getAttribute('data-theme')
 
